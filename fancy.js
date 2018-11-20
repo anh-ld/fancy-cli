@@ -11,7 +11,7 @@ const shuffle = (anArray) => {
 }
 
 const fetchData= (type, queryString) => {
-	const load = loading("Analyzing...").start()
+	const load = loading("Analyzing...").start();
 	axios.get(`https://tastedive.com/api/similar?q=${type}:${queryString}&limit=${limit}&k=${accessKey}`)
   .then(function (response) {
   	load.stop();
@@ -28,7 +28,8 @@ const fetchData= (type, queryString) => {
     }
   })
   .catch(function (error) {
-    console.log(error);
+    load.stop();
+    console.log(chalk.redBright("Something was wrong with your Internet connection!!!"));
   });
 }
 
