@@ -1,6 +1,6 @@
 {
   "name": "@culee/fancy",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "Recommend music artists, movies, tv shows, books, authors and games right from your terminal.",
   "main": "index.js",
   "author": "Le Duy Anh",
@@ -19,7 +19,7 @@
     "author",
     "game"
   ],
-  "repository": "https://github.com/culee/fancy",
+  "repository": "https://github.com/culee/fancy-cli",
   "preferGlobal": true,
   "bin": "./index.js",
   "dependencies": {
