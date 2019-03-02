@@ -40,15 +40,17 @@ const error = (errorMessage) => {
 }
 
 const commands = (argv) => {
-	if (argv[0] == "--version") {
+	if (argv[0] == "--version" || argv[0] == "-v") {
 		version();
 	}
-	else if (argv[0] == "--help" || argv.length === 0) {
+	else if (argv[0] == "--help" || argv[0] == "-h" || argv.length === 0) {
 		help();
-	} else if (types.includes(argv[0]) === true) {
+	}
+	else if (types.includes(argv[0]) === true) {
 		if (argv.length < 2) {
 			error("Lack of query string!!!");
-		} else {
+		}
+		else {
 			let type = argv[0];
 			argv = argv.slice(1);
 			fancy(type, argv);

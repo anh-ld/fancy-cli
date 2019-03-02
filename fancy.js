@@ -7,13 +7,14 @@ const limit = 15;
 
 const shuffle = (anArray) => {
   anArray = anArray.sort(() => {return 0.5 - Math.random()});
-  return anArray
+  return anArray;
 }
 
 const fetchData= (type, queryString) => {
 	const load = loading("Analyzing...").start();
+
 	axios.get(`https://tastedive.com/api/similar?q=${type}:${queryString}&limit=${limit}&k=${accessKey}`)
-  .then(function (response) {
+  .then(response => {
   	load.stop();
     results = shuffle(response.data["Similar"]["Results"]);
     results = ((results.length > 10) ? results.slice(0, 10) : results);
@@ -21,13 +22,13 @@ const fetchData= (type, queryString) => {
     	console.log(chalk.redBright("Sorry! No results!!!"));
     }
     else {
-    	console.log(chalk.cyan("Some recommendations for you:"))
+    	console.log(chalk.cyan("Some recommendations for you:"));
     	results.forEach((result) => {
     		console.log(chalk.green("✔",result["Name"]));
     	})
     }
   })
-  .catch(function (error) {
+  .catch(error => {
     load.stop();
     console.log(chalk.redBright("Something was wrong with your Internet connection!!!"));
   });
