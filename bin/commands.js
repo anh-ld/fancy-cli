@@ -1,5 +1,5 @@
 const chalk = require('chalk');
-const package = require('./package.json');
+const package = require('../package.json');
 const fancy = require('./fancy.js');
 
 const types = ['music', 'movie', 'show', 'book', 'author', 'game'];
