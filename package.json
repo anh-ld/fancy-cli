@@ -6,8 +6,7 @@
   "author": "Le Duy Anh",
   "license": "MIT",
   "keywords": [
-    "recommendation",
-    "fancy",
+    "recommendations",
     "fancy-cli",
     "cli"
   ],
@@ -15,9 +14,9 @@
   "preferGlobal": true,
   "bin": "./bin/index.js",
   "dependencies": {
-    "all": "^0.0.0",
     "axios": "^0.18.0",
     "chalk": "^2.4.1",
+    "dotenv": "^8.2.0",
     "loading-cli": "^1.0.8"
   }
 }
