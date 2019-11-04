@@ -1,7 +1,7 @@
 # fancy-cli
 Recommend music artists, movies, tv shows, books, authors and games right from your terminal.
 
-<p align="center"><img src="https://culee.github.io/fancy-cli/asset/cli.svg" alt="SVG"></p>
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/culee/fancy-cli/asset/cli.svg" alt="SVG"></p>
 
 ## Installation
 ```
