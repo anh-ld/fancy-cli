@@ -1,6 +1,6 @@
 {
   "name": "@culee/fancy",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Recommend music artists, movies, tv shows, books, authors and games right from your terminal.",
   "main": "index.js",
   "author": "Le Duy Anh",
@@ -16,7 +16,6 @@
   "dependencies": {
     "axios": "^0.18.0",
     "chalk": "^2.4.1",
-    "dotenv": "^8.2.0",
     "loading-cli": "^1.0.8"
   }
 }

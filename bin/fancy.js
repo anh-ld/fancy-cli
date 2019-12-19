@@ -2,9 +2,7 @@ const chalk = require('chalk')
 const axios = require('axios')
 const loading = require('loading-cli')
 
-require('dotenv').config()
-
-const ACCESS_KEY = process.env.ACCESS_KEY
+const ACCESS_KEY = "323943-tastecli-TU53CZ9D"
 const LIMIT = 15
 
 const shuffle = array => {
