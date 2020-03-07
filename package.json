@@ -2,14 +2,10 @@
   "name": "@culee/fancy",
   "version": "1.0.4",
   "description": "Recommend music artists, movies, tv shows, books, authors and games right from your terminal.",
-  "main": "index.js",
+  "main": "bin/index.js",
   "author": "Le Duy Anh",
   "license": "MIT",
-  "keywords": [
-    "recommendations",
-    "fancy-cli",
-    "cli"
-  ],
+  "keywords": ["recommendations", "fancy-cli", "cli"],
   "repository": "https://github.com/culee/fancy-cli",
   "preferGlobal": true,
   "bin": "./bin/index.js",
